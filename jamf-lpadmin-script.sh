@@ -5,6 +5,7 @@
 # A) lpadmin for a pharos printer
 # use of exit-code
 # use of lpstat command
+# Trying out new options
 lpadmin -p "MyNewPharosQueueName" -E -D "PharosDisplayName" -v popup://PharosPrintServer/QueueName -o printer-is-shared=false -P "/Library/Printers/PPDs/Contents/Resources/RICOH_Pro_C4503.ppd"
 echo "The LPADMIN returned status is: " $?
 lpstat -p
